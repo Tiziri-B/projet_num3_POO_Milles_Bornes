@@ -1,0 +1,84 @@
+/*package Jeu;
+
+import cartes.Carte;
+
+public class Sabot {
+	
+ private Carte[] cartes;
+ private int nbCartes;
+ 
+	public Sabot(Carte[] cartes) {
+		this.cartes= cartes;
+		this.nbCartes= cartes.length;
+	}
+	
+	
+	 public boolean estVide() {
+		 return nbCartes ==0;
+	 }
+	 
+	 
+	 public void ajouterCarte( Carte carte) {
+		 if ( nbCartes >= cartes.length) {
+			 throw new IllegalStateException("err");
+		 }
+		 cartes[nbCartes]= carte;
+		 nbCartes++;
+	 } 
+	 */
+	 package jeu;
+
+	 import java.util.Iterator;
+	 import java.util.NoSuchElementException;
+
+	 import cartes.Carte;
+
+	 public class Sabot implements Iterable<Carte> {
+
+	     private Carte[] cartes;
+	     private int nbCartes;
+
+	     public Sabot(Carte[] cartes) {
+	         this.cartes = cartes;
+	         this.nbCartes = cartes.length;
+	     }
+
+	     public boolean estVide() {
+	         return nbCartes == 0;
+	     }
+
+	     public void ajouterCarte(Carte carte) {
+	         if (nbCartes >= cartes.length) {
+	             throw new IllegalStateException("err");
+	         }
+	         cartes[nbCartes] = carte;
+	         nbCartes++;
+	     }
+
+	     @Override
+	     public Iterator<Carte> iterator() {
+	         return new Iterateur();
+	     }
+
+	     private class Iterateur implements Iterator<Carte> {
+	         private int indiceIterateur = 0;
+
+	         @Override
+	         public boolean hasNext() {
+	             return indiceIterateur < nbCartes;
+	         }
+
+	         @Override
+	         public Carte next() {
+	             if (!hasNext()) {
+	                 throw new NoSuchElementException();
+	             }
+	             Carte carte = cartes[indiceIterateur];
+	             indiceIterateur++;
+	             return carte;
+	         }
+	     }
+	 }
+	
+
+}

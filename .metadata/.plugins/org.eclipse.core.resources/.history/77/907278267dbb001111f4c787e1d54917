@@ -1,0 +1,16 @@
+package cartes;
+
+import Bataille.java;
+
+public class Attaque extends java {
+
+	public Attaque() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

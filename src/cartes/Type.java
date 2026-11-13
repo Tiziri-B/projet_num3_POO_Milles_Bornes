@@ -1,0 +1,37 @@
+package cartes;
+
+public enum Type {
+  FEU("feu_rouge", "feu_vert", "prioritaire"),
+  ESSENCE("Panne_d'essence" ,"essence","citerne"),
+  CREVAISON("Crevaison","pneu_de_secours","increvable"),
+  ACCIDENT("Accident","reparations","as_du_volant");
+	
+	private final String nomAttaque;
+	private  final String nomBotte;
+	private  final String nomParade;
+
+	/* a voir qui se sert de type pour faire la visibilité */
+	
+	Type(String nomAttaque, String nomParade,  String nomBotte) {	
+	this.nomAttaque = nomAttaque;					
+	this.nomBotte= nomBotte;
+	this.nomParade = nomParade;
+	}
+
+
+ public String getNomAttaque() {
+	return nomAttaque;
+}
+		
+ public String getNomParade() {
+		return nomParade;
+	}
+ public String getNomBotte() {
+		return nomBotte;
+	}
+
+}
+
+
+
+

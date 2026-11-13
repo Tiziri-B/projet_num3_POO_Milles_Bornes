@@ -1,0 +1,11 @@
+package testsFonctionnels;
+
+import testsFonctionnels;
+
+public class TestSabot extends testsFonctionnels {
+
+	public TestSabot() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

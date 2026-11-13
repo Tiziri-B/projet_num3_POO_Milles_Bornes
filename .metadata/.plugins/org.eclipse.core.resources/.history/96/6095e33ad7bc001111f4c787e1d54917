@@ -1,0 +1,7 @@
+package testsFonctionnels;
+
+import testsFonctionnel;
+
+public class TestJeuDeCartes extends testsFonctionnel {
+
+}

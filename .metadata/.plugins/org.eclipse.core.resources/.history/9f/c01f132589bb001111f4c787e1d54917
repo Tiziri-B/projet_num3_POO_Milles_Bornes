@@ -1,0 +1,11 @@
+package cartes;
+
+import cartes;
+
+public class JeuDeCartes extends cartes {
+
+	public JeuDeCartes() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

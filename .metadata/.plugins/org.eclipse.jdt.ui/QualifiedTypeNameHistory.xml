@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="cartes.Parade"/>
+    <fullyQualifiedTypeName name="cartes.Type"/>
+    <fullyQualifiedTypeName name="cartes.Attaque"/>
+    <fullyQualifiedTypeName name="cartes.DebutLimite"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="cartes.JeuDeCartes.Configuration"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputFilter.Config"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+</qualifiedTypeNameHistroy>

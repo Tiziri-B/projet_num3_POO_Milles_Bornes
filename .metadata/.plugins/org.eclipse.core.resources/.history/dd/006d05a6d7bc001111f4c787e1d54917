@@ -1,0 +1,11 @@
+package jeu;
+
+import jeu;
+
+public class Sabot extends jeu {
+
+	public Sabot() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
